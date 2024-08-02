@@ -222,7 +222,7 @@ function maxLengthCheck(object){
                                                             {
 
                                                   
-                                                                if(regex2.test(name) && name.length > 1 )
+                                                                if( name.length > 1 )
                                                                 {
                                                                 
                                                                         if(ph.substr(0, 3) == "010" && ph.length ==11 && regex.test(ph))
