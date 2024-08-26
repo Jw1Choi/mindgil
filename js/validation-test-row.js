@@ -170,6 +170,8 @@ function maxLengthCheck(object){
     // var license = $('#license').val();
     // var id = $('#id-number').val();
     var name = $('#name').val();
+    var age = $('#age').val();
+    var dropdown = $('#dropdown').val();
     // var email = $('#email').val();
     var ph = $('#phone').val();
     // var message = $('#message').val();
@@ -224,78 +226,114 @@ function maxLengthCheck(object){
                                                   
                                                                 if( name.length > 1 )
                                                                 {
+
+                                                                    if( age.length > 1 )
+                                                                    {
+                                                                            
+                                                                                if( dropdown != null )
+                                                                                {
                                                                 
-                                                                        if(ph.substr(0, 3) == "010" && ph.length ==11 && regex.test(ph))
-                                                                        {
-                                                                        
-                                                                                    // if(regex.test(id) && id.length == 2 && id >=23 && id <56)
-                                                                                    // {
-                                                                                    
-                                                                                    //             if( position != null )
-                                                                                    //             {
-                                                                                            
-                                                                                                            if (agree == true)
-                                                                                                            {
-                                                                                                                $('#send_message').css({transition:"1s"});
-                                                                                                            $('#send_message').prop("disabled", false);
-                                                                                                            $('#send_message').prop("value", "설문 제출하고 혜택받기");
-                                                                                                            $('#send_message').css({background:"#0e3b64"});
-                                                                                                            $('#send_message').css({cursor:"pointer"});
-                                                                                                            }
-                                                                                                            else
-                                                                                                            {
-                                                                                                                $('#send_message').css({transition:"1s"});
-                                                                                                                $('#send_message').prop("disabled", true);
-                                                                                                                $('#send_message').prop("value", "개인정보 동의를 해주세요");
-                                                                                                                $('#send_message').css({background:"#595959"});
-                                                                                                                $('#send_message').css({cursor:"default"});     
-                                                                                                            }
+                                                                                                if(ph.substr(0, 3) == "010" && ph.length ==11 && regex.test(ph))
+                                                                                                {
+                                                                                                
+                                                                                                            // if(regex.test(id) && id.length == 2 && id >=23 && id <56)
+                                                                                                            // {
                                                                                                             
-                                                                                    //                     }
-                                                                                    //                     else
-                                                                                    //                     {
-                                                                                    //                         $('#send_message').css({transition:"1s"});
-                                                                                    //                         $('#send_message').prop("disabled", true);
-                                                                                    //                         $('#send_message').prop("value", "통화 시간을 선택하세요.");
-                                                                                    //                         $('#send_message').css({background:"#595959"});
-                                                                                    //                         $('#send_message').css({cursor:"default"});     
-                                                                                    //                     }
-                                                                        
-                                                                                    // }
-                                                                                    // else if(id.length==0)
-                                                                                    // {
-                                                                                    // $('#send_message').css({transition:"1s"});
-                                                                                    // $('#send_message').prop("disabled", true);
-                                                                                    // $('#send_message').prop("value", "나이를 입력하세요.");
-                                                                                    // $('#send_message').css({background:"#595959"});
-                                                                                    // $('#send_message').css({cursor:"default"});     
-                                                                                    // }
-                                                                                    // else 
-                                                                                    // {
-                                                                                    // $('#send_message').css({transition:"1s"});
-                                                                                    // $('#send_message').prop("disabled", true);
-                                                                                    // $('#send_message').prop("value", "23 ~ 55세까지 가능합니다.");
-                                                                                    // $('#send_message').css({background:"#595959"});
-                                                                                    // $('#send_message').css({cursor:"default"});     
-                                                                                    // }
-                                                                        
-                                                                        }
-                                                                        else if(ph.length>0)
-                                                                        {
-                                                                            $('#send_message').css({transition:"1s"});
-                                                                            $('#send_message').prop("disabled", true);
-                                                                            $('#send_message').prop("value", "전화번호 입력을 확인하세요.");
-                                                                            $('#send_message').css({background:"#595959"});
-                                                                            $('#send_message').css({cursor:"default"});     
+                                                                                                            //             if( position != null )
+                                                                                                            //             {
+                                                                                                                    
+                                                                                                                                    if (agree == true)
+                                                                                                                                    {
+                                                                                                                                        $('#send_message').css({transition:"1s"});
+                                                                                                                                    $('#send_message').prop("disabled", false);
+                                                                                                                                    $('#send_message').prop("value", "설문 제출하고 혜택받기");
+                                                                                                                                    $('#send_message').css({background:"#0e3b64"});
+                                                                                                                                    $('#send_message').css({cursor:"pointer"});
+                                                                                                                                    }
+                                                                                                                                    else
+                                                                                                                                    {
+                                                                                                                                        $('#send_message').css({transition:"1s"});
+                                                                                                                                        $('#send_message').prop("disabled", true);
+                                                                                                                                        $('#send_message').prop("value", "개인정보 동의를 해주세요");
+                                                                                                                                        $('#send_message').css({background:"#595959"});
+                                                                                                                                        $('#send_message').css({cursor:"default"});     
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                            //                     }
+                                                                                                            //                     else
+                                                                                                            //                     {
+                                                                                                            //                         $('#send_message').css({transition:"1s"});
+                                                                                                            //                         $('#send_message').prop("disabled", true);
+                                                                                                            //                         $('#send_message').prop("value", "통화 시간을 선택하세요.");
+                                                                                                            //                         $('#send_message').css({background:"#595959"});
+                                                                                                            //                         $('#send_message').css({cursor:"default"});     
+                                                                                                            //                     }
+                                                                                                
+                                                                                                            // }
+                                                                                                            // else if(id.length==0)
+                                                                                                            // {
+                                                                                                            // $('#send_message').css({transition:"1s"});
+                                                                                                            // $('#send_message').prop("disabled", true);
+                                                                                                            // $('#send_message').prop("value", "나이를 입력하세요.");
+                                                                                                            // $('#send_message').css({background:"#595959"});
+                                                                                                            // $('#send_message').css({cursor:"default"});     
+                                                                                                            // }
+                                                                                                            // else 
+                                                                                                            // {
+                                                                                                            // $('#send_message').css({transition:"1s"});
+                                                                                                            // $('#send_message').prop("disabled", true);
+                                                                                                            // $('#send_message').prop("value", "23 ~ 55세까지 가능합니다.");
+                                                                                                            // $('#send_message').css({background:"#595959"});
+                                                                                                            // $('#send_message').css({cursor:"default"});     
+                                                                                                            // }
+                                                                                                
+                                                                                                }
+                                                                                                else if(ph.length>0)
+                                                                                                {
+                                                                                                    $('#send_message').css({transition:"1s"});
+                                                                                                    $('#send_message').prop("disabled", true);
+                                                                                                    $('#send_message').prop("value", "전화번호 입력을 확인하세요.");
+                                                                                                    $('#send_message').css({background:"#595959"});
+                                                                                                    $('#send_message').css({cursor:"default"});     
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    $('#send_message').css({transition:"1s"});
+                                                                                                    $('#send_message').prop("disabled", true);
+                                                                                                    $('#send_message').prop("value", "전화번호를 입력하세요.");
+                                                                                                    $('#send_message').css({background:"#595959"});
+                                                                                                    $('#send_message').css({cursor:"default"});     
+                                                                                                }
+
+
                                                                         }
                                                                         else
                                                                         {
                                                                             $('#send_message').css({transition:"1s"});
                                                                             $('#send_message').prop("disabled", true);
-                                                                            $('#send_message').prop("value", "전화번호를 입력하세요.");
+                                                                            $('#send_message').prop("value", "성별을 선택하세요.");
                                                                             $('#send_message').css({background:"#595959"});
                                                                             $('#send_message').css({cursor:"default"});     
                                                                         }
+
+                                                                    }
+                                                                    else if(age.length>0)
+                                                                    {
+                                                                        $('#send_message').css({transition:"1s"});
+                                                                        $('#send_message').prop("disabled", true);
+                                                                        $('#send_message').prop("value", "나이 입력을 확인하세요.");
+                                                                        $('#send_message').css({background:"#595959"});
+                                                                        $('#send_message').css({cursor:"default"});     
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        $('#send_message').css({transition:"1s"});
+                                                                        $('#send_message').prop("disabled", true);
+                                                                        $('#send_message').prop("value", "나이를 입력하세요.");
+                                                                        $('#send_message').css({background:"#595959"});
+                                                                        $('#send_message').css({cursor:"default"});     
+                                                                    }
+                                
                                                             }
                                                             else if(name.length>0)
                                                             {
@@ -467,7 +505,7 @@ function maxLengthCheck(object){
 
 
 $(function(){
- $('#name,#phone,#problem1,#problem2,#problem3,#hope1,#hope2,#hope3,#agree11,#question3,#question4').bind("keyup click change",form_check);
- $('#name,#phone,#problem1,#problem2,#problem3,#hope1,#hope2,#hope3,#agree11,#question3,#question4').bind("keyup click change",form_check1);
+ $('#name,#phone,#problem1,#problem2,#problem3,#hope1,#hope2,#hope3,#agree11,#question3,#question4,#age,#dropdown').bind("keyup click change",form_check);
+ $('#name,#phone,#problem1,#problem2,#problem3,#hope1,#hope2,#hope3,#agree11,#question3,#question4,#age,#dropdown').bind("keyup click change",form_check1);
 //  $('#license').bind("keyup click change",lic_pick);
 })
