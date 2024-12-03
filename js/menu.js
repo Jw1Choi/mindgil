@@ -2,7 +2,7 @@ const template = document.getElementById('headerTemplate');
 template.innerHTML = `
 <header>
 <nav class="top">
-    <a class="logo"  target="_self" href="./index.html">
+    <a class="logo"  target="_self" href="#">
       <p class="logo-font" style="font-size:13px;">마음건강 길</p>
       <!-- <img alt="" src="img/jamclass-logo.png" > -->
     
