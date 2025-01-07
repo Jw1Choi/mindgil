@@ -141,10 +141,10 @@ function maxLengthCheck(object){
  
  function hoa(){
     setTimeout( function(){
-        alert("설문 참여 감사합니다.\n여러분의 고민을 날려버릴 수 있는\n컨퍼런스를 기획하여 초대드리겠습니다.\n\n마음건강 길");
+        alert("설문 참여 감사합니다.\n여러분의 고민을 날려버릴 수 있는\n프로그램을 기획하여 초대드리겠습니다.\n\n마음건강 길");
         $(window).scrollTop(0);
-        window.location.reload();
-        // window.location.href='./result.html';
+        // window.location.reload();
+        window.location.href='./result.html';
        },1500);
 
  }
